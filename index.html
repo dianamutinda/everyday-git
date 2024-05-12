@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+</head>
+<body>
+    <h1>What is git</h1>
+    <p>Git is a popular version control system.It helps track revisions, collaborate with others, and maintain a history of project development.</p>
+    <div>
+      <H2>Other version control systems</H2>
+        <ul>
+          <li>Fossil: A distributed VCS, bug tracking system, and wiki software server.</li>
+          <li>Apache Subversion (SVN): A centralized VCS that stores changes as deltas to files.</li>
+          <li>Bazaar: A decentralized VCS that emphasizes simplicity and ease of use.</li> 
+        </ul>
+        <p>Remember, in this blog, we will focus on<em> Git and GitHub.</em></p>
+    </div>
+
+    <div>
+        <h2>Installing Git</h2>
+        <p>Your operating system does not have git installed by the manufacturers.To check whether git is installed use your computer command prompt in windows or terminal in linux or macos. Type the command <strong>git --version </strong> if an error message is displayed, download git from <a href="https://www.git-scm.com/">here</a>.If the operating system has git <strong>git version yyy</strong> will be displayed.</p>
+        <img src="./Camera Roll/git version .png" alt="">
+    </div>
+
+    <div>
+        <h2>Configuring Git</h2>
+        <p>After installing git, its important to let git know who you are by inputing your username and email address. Note that its advisable to use your github user name and email address.</p>
+        <img src="./Camera Roll/git user and email configuration .png" alt="">
+    </div>
+
+    <div>
+        <h2>Intializing a Git repository</h2>
+        <p>Before we can use git in our project, we need to initialize a git repository inside the project.To confirm whether the project contains a git repository, we use <strong>git status</strong> command.You will recieve <strong>fatal not git repository...</strong> if the project does not contain a git repository, and otherwise if the project contains a git repository.</p>
+        <p>If the project does not contain a git repository, use <strong>git init</strong> command to initialize a git repository in the project.</p>
+        <img src="./Camera Roll/git init.png" alt="">
+    </div>
+
+    <div>
+        <h2>Adding files to the staging area</h2>
+        <p>Use the following command to stage your changes <strong>git add.</strong></p>
+        <h3>Tracked Files</h3>
+          <p>Tracked files are those that Git knows about and actively manages. They have been added to the Git repository and have a version history.</p>
+        <h3>Untracked Files</h3>
+          <p>Untracked files are everything else in your working directory.Files that were not in your last commit.Files that are not currently staged.Untracked files don't have a version history in Git.</p>
+        <img src="./Camera Roll/tracking file.png" alt="">
+    </div>
+
+    <div>
+        <h2>Commiting changes</h2>
+        <h3>Committing Changes in Git</h3>
+          <p>Stage Your Changes by ensuring that you've made the necessary changes to your files in the working directory.Create a Commit once your changes are staged, using the following command <strong>git commit -m "Your meaningful commit message here"</strong></p>
+        <h3>Writing Good Commit Messages</h3>
+        <ul>
+           <li>Be Descriptive:Explain what the commit does. Avoid vague messages like “Fix bug” or “Update code.”</li>
+           <li>Keep It Short:Aim for a concise summary (usually one line) in the commit message.</li>
+        </ul>
+        <p>To see a list of past commits, use <strong>git log</strong> command.</p>
+        <img src="./Camera Roll/git commit.png" alt="">
+    </div>
+
+    <div>
+        <h2>Branches</h2>
+        <p>In Git, a branch is a lightweight movable pointer to a specific commit. It represents an independent line of development within a Git repository.Each branch has its own commit history, allowing you to work on different features, bug fixes, or experiments simultaneously without affect</p>
+    </div>
+
+    <div>
+        <h2>Creating a branch</h2>
+        <p>To create a branc you use <strong>git branch branch-name</strong> command.</p>
+        <img src="./Camera Roll/creating a branch .png" alt="">
+    </div>
+
+    <div>
+        <h2>Viewing all branches</h2>
+        <p>To view all branches in a repository, use <strong>git branch</strong> command. There is an aesterik (*) sign in the active branch.</p>
+        <img src="./Camera Roll/viewing all branches .png" alt="">
+    </div>
+
+    <div>
+        <h2>Switching active branches</h2>
+        <p>To switch active branch use the command <strong>git checkout branch-name</strong>.</p>
+        <img src="./Camera Roll/switching branches .png" alt="">
+    </div>
+
+    <div>
+        <h2>Merging a branch</h2>
+        <p>To merge a git branch use <strong>git merge branch-name</strong> command.</p>
+        <img src="./Camera Roll/git merge.png" alt="">
+    </div>
+
+    <div>
+        <h2>Deleting a branch</h2>
+        <p>To delete a branch in the repository,use the command <strong>git branch -d branch-name</strong>.</p>
+        <img src="./Camera Roll/git delete.png" alt="">
+    </div>
+
+    <div>
+        <h2>Learn About Git Remotes and GitHub</h2>
+        <ul>
+          <li>Git remotes allow you to collaborate with others and share your code. GitHub is a popular platform for hosting Git repositories.</li>
+          <li>Explore how to add remotes, push changes, and pull updates from remote repositories.</li>
+          <li>Consider creating a GitHub account and experimenting with repositories there.</li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>
